@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | GitHub user search app</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header class="header">
+      <h1>
+        devfinder
+      </h1>
+      <p class="togglemode">
+        LIGHT
+        <img src="assets/icon-sun.svg" alt="Toggle dark mode">
+      </p>
+    </header>
+    <div class="search-area">
+      <label for="user"><img src="assets/icon-search.svg" alt="Click to search an github user" class="search-icon"></label>
+      <input type="text" name="user" id="user" class="search-user" placeholder="Search Github username..." spellcheck=”false”>
+      <button class="btn">Search</button>
+    </div>
+    <div class="user-info">
+      <div class="user-icon">
+        <img src="https://avatars.githubusercontent.com/u/115277406?v=4" alt="User Image" class="user-image">
+      </div>
+      <div class="user-perfil-info">
+        <div class="user-name">
+          <div class="name">
+            <h1 class="nome"></h1>
+            <p>@<span class="login"></span></p> 
+          </div>
+          <div class="user-data">
+            Joined <span class="date" style="margin-left: 6px;"> </span><span class="month" style="margin-left: 6px;"></span> <span class="year" style="margin-left: 6px;"> </span>
+          </div>
+        </div>
+        <div class="user-bio">
+          <p class="bio"></p>
+        </div>
+        <div class="mobile-user">
+          <div class="user-status">
+            <div class="repositories">
+              <h2>Repo</h2>
+              <span class="repo"></span>
+            </div>
+            <div class="followers">
+              <h2>Followers</h2>
+              <span class="followers-number"></span>
+            </div>
+            <div class="following">
+              <h2>Following</h2>
+              <span class="following-number"></span>
+            </div>
+          </div>
+          <div class="user-secondary-info">
+            <div class="location">
+              <img src="assets/icon-location.svg" alt="Location">
+              <h3 class="location-text"></h3>
+            </div>
+            <div class="blog">
+              <img src="assets/icon-website.svg" alt="Website">
+              <h3 class="blog-text"></h3>
+            </div>
+            <div class="twitter">
+              <img src="assets/icon-twitter.svg" alt="Twitter" class="img-twitter">
+              <h3 class="twitter-text"></h3>
+            </div>
+            <div class="company">
+              <img src="assets/icon-company.svg" alt="Company">
+              <h3 class="company-text"></h3>
+            </div>
+        </div>
+        
+        </div>
+      </div>
+    </div>
+  </main>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
